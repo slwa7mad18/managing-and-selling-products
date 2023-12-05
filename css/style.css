@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+.clear-fix{
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+label {
+    color: rgb(37, 152, 156);
+    float: left;
+    padding-left: 200px;
+}
+
+.sub {
+    background-color: rgb(37, 152, 156);
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+}
+
+.table-item {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+}
+
+table {
+    border: 2px rosybrown solid;
+    width: 100%;
+    padding: 10px;
+    color: rgb(37, 152, 156);
+    
+}
+
+textarea {
+    resize: none;
+    border: 0;
+    border-radius: 10px;
+}
+
+.btnSize{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.validate{
+    color: red;
+}

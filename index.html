@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="productName">
+                <label for="product-name">Product Name</label>
+                <br>
+                <input class="inputs" type="text" name="product-name" id="product-name">
+                <br>
+                <p class="validate" id="idName"></p>
+            </div>
+            
+            <br><br>
+
+            <div class="productPrice">
+                <label for="product-price">Product Price</label>
+                <br>
+                <input class="inputs" type="text" name="product-price" id="product-price">
+                <br>
+                <p class="validate" id="idPrice"></p>
+            </div>
+            
+            <br><br>
+
+            <div class="productCategory">
+                <label for="product-category">Product Category</label>
+                <br>
+                <input class="inputs" type="text" name="product-category" id="product-category">
+                <br>
+                <p class="validate" id="idCat"></p>
+            </div>
+            <br><br>
+
+            <div class="description-item">
+                <label label for="description">Description</label>
+                <br>
+                <textarea class="inputs" name="description" id="description" cols="121" rows="5"></textarea>
+            </div>
+        </div>
+        <br><br>
+
+        <button type="submit" id="addBtn" class="sub">Add Product</button>
+        <br><br> <br><br><br>
+
+        <div class="productSearch">
+            <label for="product-search">Serach By Product Name</label>
+            <br>
+            <input onkeyup="searchProduct(this.value)" class="inputs" type="text" name="product-search" id="product-search">
+        </div>
+
+        <br><br>
+        <div class="table-item">
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>
+                            Product Name
+                        </th>
+                        <th>
+                            Product Price
+                        </th>
+                        <th>
+                            Product Category
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th style="color: #f0ad4e;">
+                            Update
+                        </th>
+                        <th style="color: #d9534f;">
+                            Delete
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
